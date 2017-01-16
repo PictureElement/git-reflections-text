@@ -8,7 +8,7 @@ What happens when you initialize a repository? Why do you need to do it?
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 
-	The staging area is part of git. It's an intermediate area  between the 
+	The staging area is part of git. It's an intermediate area between the 
 	working directory and the git repository. 
 	You can add files one at a time to the staging area. Then, when you’re ready
 	to commit, git bundles the entire contents of the staging area into a single 
@@ -21,6 +21,10 @@ What value do you think it offers?
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+	
+	Staging area offers flexibility because you can add files one at a time.
+	Therefore, you are able to commit whatever you choose. You should commit
+	only the file you've changed.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
