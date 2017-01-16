@@ -29,6 +29,11 @@ change?
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+	Branching is a useful way to experiment with new features and not have to 
+	worry about breaking what you currently have. By branching you create a copy
+	of the current state of the master branch. You are free to make any changes 
+	to the new branch but these changes do not affect the master branch. 
+
 How do the diagrams help you visualize the branch structure?
 
 What is the result of merging two branches together? Why do we represent it in
