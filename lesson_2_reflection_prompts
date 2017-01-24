@@ -37,21 +37,31 @@ organized? How would branches help?
 How do the diagrams help you visualize the branch structure?
 
 	With diagrams I can visualize the entire tree structure.
-	The diagrams show what the parent of each commit is. I can use diagrams to 
-	to check the reachability of git log for each branch by tracing back (starting
-	from the branch label) until I get to a commit that doesn’t have a parent.
-	When there are multiple branches, I can use the diagrams to easily see what 
-	changes will be part of each branch. They also let me easily see what commit 
-	each branch refers to.
+	The diagrams show what the parent of each commit is. I can use diagrams to  
+	to check the reachability of git log for each branch by tracing back 
+    (starting from the branch label) until I get to a commit that doesn’t have a
+    parent.When there are multiple branches, I can use the diagrams to easily 
+    see what changes will be part of each branch. They also let me easily see 
+    what commit each branch refers to.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
 	Merging two branches incorporates changes from two branches into a single 
-	branch. This allows developers to create new features or work independently of 
-	one another and then combine their efforts into a working version. The resulting
-	branch has two parents and holds information about all the commits from the 
-	previous branches in chronological order. 
+	branch. This allows developers to create new features or work independently 
+    of one another and then combine their efforts into a working version. The 
+    resulting branch has two parents and holds information about all the commits
+    from the previous branches in chronological order. 
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+	Automatic merging is convenient but it doesn't always work. Merge conflicts 
+	have to be manually resolved becasue Git has no idea which of the 2 versions
+	to keep. Developers should discuss their changes and dicide which change 
+	want to keep. Also they might decide to incorporate both changes by 
+    modifying the code accordingly. Automatic merging can also make mistakes.
+	For example, if one branch deleted a function, and another branch added a
+	call to that function, Git would merge those together with no conflicts and
+	the resulting code would be broken.
+	
