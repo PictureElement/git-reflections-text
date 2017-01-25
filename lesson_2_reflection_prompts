@@ -1,29 +1,28 @@
 What happens when you initialize a repository? Why do you need to do it?
 
 	a .git directory is created inside the repository. The new repository 
-	doesn't contains any commits. A repository its a place where the history 
-	of your work is stored, without a repository you can't use any version-
-	control features. 
+	doesn't contain any commits. A repository is a place where the history of 
+	your work is stored, without a repository you can't use any version-control 
+	features. 
 
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 
 	The staging area is part of git. It's an intermediate area between the 
-	working directory and the git repository. 
-	You can add files one at a time to the staging area. Then, when you’re ready
-	to commit, git bundles the entire contents of the staging area into a single 
-	commit and adds that to the repository.
-	Staging area offers flexibility. You don't have to commit all your files in 
-	the repository but only the ones you choose. For example you don't have to 
-	commit all your files in case you have made some changes to only one file. 
-	Remember that you should make one commit per logical change, so commiting 
-	only the file you've changed is useful.
+	working directory and the git repository. You can add files one at a time to
+	the staging area. Then, when you’re ready to commit, git bundles the entire 
+	contents of the staging area into a single commit and adds that to the 
+	repository. Staging area offers flexibility. You don't have to commit all 
+	your files in the repository but only the ones you choose. For example you 
+	don't have to commit all your files in case you have made some changes to 
+	only one file. Remember that you should make one commit per logical change, 
+	so commiting only the file you've changed is useful.
 
 How can you use the staging area to make sure you have one commit per logical
 change?
 	
 	Staging area offers flexibility because you can add files one at a time.
-	Therefore, you are able to commit whatever you choose. You should commit
+	Therefore, you are able to commit whatever you choose. You should commit 
 	only the file you've changed.
 
 What are some situations when branches would be helpful in keeping your history
@@ -36,13 +35,13 @@ organized? How would branches help?
 
 How do the diagrams help you visualize the branch structure?
 
-	With diagrams I can visualize the entire tree structure.
-	The diagrams show what the parent of each commit is. I can use diagrams to  
-	to check the reachability of git log for each branch by tracing back 
-    (starting from the branch label) until I get to a commit that doesn’t have a
-    parent.When there are multiple branches, I can use the diagrams to easily 
-    see what changes will be part of each branch. They also let me easily see 
-    what commit each branch refers to.
+	With diagrams I can visualize the entire tree structure. The diagrams show 
+	what the parent of each commit is. I can use diagrams to check the 
+	reachability of git log for each branch by tracing back (starting from the 
+	branch label) until I get to a commit that doesn’t have a parent. When there
+	are multiple branches, I can use the diagrams to easily see what changes 
+	will be part of each branch. They also let me easily see what commit each 
+	branch refers to.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
@@ -57,11 +56,10 @@ What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
 
 	Automatic merging is convenient but it doesn't always work. Merge conflicts 
-	have to be manually resolved becasue Git has no idea which of the 2 versions
-	to keep. Developers should discuss their changes and dicide which change 
+	have to be manually resolved because Git has no idea which of the 2 versions
+	to keep. Developers should discuss their changes and decide which change 
 	want to keep. Also they might decide to incorporate both changes by 
-    modifying the code accordingly. Automatic merging can also make mistakes.
-	For example, if one branch deleted a function, and another branch added a
-	call to that function, Git would merge those together with no conflicts and
-	the resulting code would be broken.
-	
+	modifying the code accordingly. Beware though! Automatic merging can also 
+	make mistakes. For example, if one branch deleted a function, and another 
+	branch added a call to that function, Git would merge those together with no
+	conflicts and the resulting code would be broken.

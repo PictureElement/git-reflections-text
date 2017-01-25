@@ -9,46 +9,44 @@ was introduced?
 How could having easy access to the entire history of a file make you a more
 efficient programmer in the long term?
 
-    If you want to try something new (i.e new implementation) but in the end 
-    it hasn't worked out as you thought you can revert your changes. 
-    Version control gives you that flexibility. You can fix your 
-    mistakes by going forward and backward.
-    With version control you learn how to break a problem into smaller parts,
-    organize your work better and be more efficient.
+    If you want to try something new (i.e new implementation) but in the end it 
+	hasn't worked out as you thought you can revert your changes.Version control
+	gives you that flexibility. You can fix your mistakes by going forward and 
+	backward. With version control you learn how to break a problem into smaller
+	parts, organize your work better, and be more efficient.
 
 What do you think are the pros and cons of manually choosing when to create a
 commit, like you do in Git, vs having versions automatically saved, like Google
 docs does?
 
     By manually choosing when to create a commit is very useful because you can 
-    commit whenever a logical change has been made. You have more flexibility and
-    you don't have to worry about less usefull commits that do not seem to have a 
-    purpose and populate your history. The downside of manual commits is that you 
-    always have to remember commiting your changes.
+    commit whenever a logical change has been made. You have more flexibility 
+	and you don't have to worry about less useful commits that do not seem to 
+	have a purpose and populate your history. The downside of manual commits is 
+	that you always have to remember commiting your changes.
 
 Why do you think some version control systems, like Git, allow saving multiple
 files in one commit, while others, like Google Docs, treat each file separately?
 
-    Git is a version control system primarily for software development. A Programming 
-    projects often span across multiple interrelated files, that's why tracking files 
-    together makes sense. Google Docs works with popular documents including 
-    Microsoft® Word and PDF files. Ususally those types of files have no dependencies
-    like the source and header files of a C++ program. It makes sense to treat each file
-    separately. 
+    Git is a version control system primarily for software development. Most 
+	programming projects often span across multiple interrelated files, that's 
+	why tracking files together makes sense. Google Docs works with popular 
+	documents including Microsoft® Word and PDF files. Ususally those types of 
+	files have no dependencies like the source and header files of a C++ 
+	program. It makes sense to treat each file separately. 
 
 How can you use the commands git log and git diff to view the history of files?
 
-    With "git log" I can view the entire commit history and information regarding 
-    each commit such as commit ID, author, date and comments. 
-    With "git diff old_commit new_commit" I can compare the two versions of the code 
-    in those commits.
-
+    With "git log" I can view the entire commit history and information 
+	regarding each commit such as commit ID, author, date and comments.
+	With "git diff old_commit new_commit" I can compare the two versions of the 
+	code in those commits.
 
 How might using version control make you more confident to make changes that
 could break something?
 
     Using version control you can make changes with confidence because you don't
-    have to worry about bugs. At any time you can revert your changes by going back 
-    to a previous commit using git checkout. Having this ability you can find out 
-    which commit introduced the bug by running the code. When you find that commit 
-    you can locate the bug using git diff. 
+    have to worry about bugs. At any time you can revert your changes by going 
+	back to a previous commit using git checkout. Having this ability, you can 
+	find out which commit introduced the bug. When you find that commit you can 
+	locate the bug using git diff and fix it.
