@@ -27,8 +27,11 @@ use one instead of another?
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
-
+     If I am about to go offline I can update the local copy of the remote 
+	 (origin/master). I can do this even if I am not ready to merge the remote 
+     changes into my own master branch. I can work on my own master branch and 
+     when I get ready I can perform the merge offline.
+	 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
