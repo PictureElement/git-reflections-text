@@ -58,4 +58,13 @@ and what would be harder?
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+     If I work on a collaborative project, I tend to use a separate branch to 
+     introduce my changes. Then, I push the branch on GitHub and create a pull 
+     request to notify fellow collaborators about my changes. 
+     The benefits of this approach is that you cannot easily break the remote 
+     master because your changes are reviewed by the project team before they're
+     integrated into the remote master. Another benefit of this approach is the 
+     valuable feedback you get from team members. 
+     On the other hand, If I work on my own or with a few people, I tend to work
+     directly on master. This approach is easier but is not recommened for 
+     collaborative environments.
